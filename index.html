@@ -111,33 +111,40 @@
         link: "https://example.com/ibaraki-restaurant-20"
       }
     ];
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>レストラン一覧</h1>
 
-    function filterByCategory() {
-      var table, tr, td, i;
-      table = document.getElementById("restaurantTable");
-      tr = table.getElementsByTagName("tr");
+    <div class="category-checkboxes">
+      <!-- チェックボックスのラベルはアクセシビリティを向上させるために、フィールドセットで囲みました -->
+      <fieldset>
+        <legend>カテゴリーで絞り込む:</legend>
+        <label><input type="checkbox" value="ラーメン" onchange="filterByCategory()">ラーメン</label>
+        <label><input type="checkbox" value="ハンバーガー" onchange="filterByCategory()">ハンバーガー</label>
+        <label><input type="checkbox" value="ピザ" onchange="filterByCategory()">ピザ</label>
+        <label><input type="checkbox" value="寿司" onchange="filterByCategory()">寿司</label>
+        <label><input type="checkbox" value="和食" onchange="filterByCategory()">和食</label>
+        <label><input type="checkbox" value="洋食" onchange="filterByCategory()">洋食</label>
+        <label><input type="checkbox" value="イタリアン" onchange="filterByCategory()">イタリアン</label>
+      </fieldset>
+    </div>
 
-      var checkboxes = document.querySelectorAll(".category-checkboxes input[type='checkbox']");
-      var selectedCategories = [];
+    <table id="restaurantTable">
+      <thead>
+        <tr>
+          <th>写真</th>
+          <th>店名</th>
+          <th>分類</th>
+          <th>リンク</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
-      for (i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-          selectedCategories.push(checkboxes[i].value);
-        }
-      }
-
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[2];
-        if (td) {
-          if (selectedCategories.length === 0 || selectedCategories.includes(td.textContent)) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-
+  <script>
     document.addEventListener("DOMContentLoaded", function() {
       var table = document.getElementById("restaurantTable");
       var tbody = table.getElementsByTagName("tbody")[0];
@@ -157,36 +164,5 @@
       });
     });
   </script>
-</head>
-<body>
-  <div class="container">
-    <h1>レストラン一覧</h1>
-
-    <div class="category-checkboxes">
-      <!-- チェックボックスのラベルはアクセシビリティを向上させるために、フィールドセットで囲みました -->
-      <fieldset>
-        <legend>カテゴリーで絞り込む:</legend>
-        <label><input type="checkbox" value="ラーメン" onchange="filterByCategory()">ラーメン</label>
-        <label><input type="checkbox" value="ハンバーガー" onchange="filterByCategory()">ハンバーガー</label>
-        <label><input type="checkbox" value="ピザ" onchange="filterByCategory()">ピザ</label>
-        <label><input type="checkbox" value="寿司" onchange="filterByCategory()">寿司</label>
-        <label><input type="checkbox" value="和食" onchange="filterByCategory()">和食</label>
-        <label><input type="checkbox" value="洋食 イタリアン" onchange="filterByCategory()">洋食 イタリアン</label>
-        <label><input type="checkbox" value="イタリアン" onchange="filterByCategory()">イタリアン</label>
-      </fieldset>
-    </div>
-
-    <table id="restaurantTable">
-      <thead>
-        <tr>
-          <th>写真</th>
-          <th>店名</th>
-          <th>分類</th>
-          <th>リンク</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
 </body>
 </html>
