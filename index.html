@@ -16,34 +16,40 @@
       padding: 20px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    .article {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
+    .article-image {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
     }
 
-    th {
-      background-color: #f2f2f2;
+    .article-content {
+      flex: 1;
+    }
+
+    .article-title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .article-category {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .article-link {
+      font-size: 14px;
+      text-decoration: none;
+      color: blue;
     }
 
     .category-checkboxes label {
       margin-right: 10px;
-    }
-
-    .restaurant-image {
-      max-height: 100px;
-      width: auto;
-    }
-
-    /* 追加したCSSスタイル */
-    .restaurant-image-cell {
-      width: 120px;
     }
 
     @media (max-width: 600px) {
@@ -51,16 +57,28 @@
         padding: 10px;
       }
 
-      .restaurant-image {
-        max-height: 80px;
-      }
-
-      .restaurant-image-cell {
+      .article-image {
         width: 80px;
+        height: auto;
+        margin-right: 10px;
       }
 
-      table {
-        font-size: 14px;
+      .article-title {
+        font-size: 16px;
+      }
+
+      .article-category {
+        font-size: 12px;
+      }
+
+      .article-link {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        font-size: 200%;
       }
     }
   </style>
@@ -103,7 +121,300 @@
         image: "yoshoku.jpg",
         link: "https://example.com/ibaraki-restaurant-2"
       },
-      // 他のレストランを追加...
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
+      {
+        name: "茨城レストラン20",
+        category: "イタリアン",
+        image: "italian.jpg",
+        link: "https://example.com/ibaraki-restaurant-20"
+      },
       {
         name: "茨城レストラン20",
         category: "イタリアン",
@@ -111,6 +422,60 @@
         link: "https://example.com/ibaraki-restaurant-20"
       }
     ];
+
+    function filterByCategory() {
+      var checkboxes = Array.from(document.querySelectorAll('.category-checkboxes input[type="checkbox"]:checked'));
+      var container = document.getElementById("container");
+      container.innerHTML = "";
+
+      restaurants.forEach(function(restaurant) {
+        if (checkboxes.some(function(checkbox) {
+          return checkbox.value === restaurant.category;
+        })) {
+          var article = document.createElement("div");
+          article.classList.add("article");
+
+          var image = document.createElement("img");
+          image.classList.add("article-image");
+          image.src = restaurant.image;
+          image.alt = restaurant.name;
+
+          var content = document.createElement("div");
+          content.classList.add("article-content");
+
+          var title = document.createElement("h2");
+          title.classList.add("article-title");
+          title.textContent = restaurant.name;
+
+          var category = document.createElement("p");
+          category.classList.add("article-category");
+          category.textContent = restaurant.category;
+
+          var link = document.createElement("a");
+          link.classList.add("article-link");
+          link.href = restaurant.link;
+          link.textContent = "詳細を見る";
+
+          content.appendChild(title);
+          content.appendChild(category);
+          content.appendChild(link);
+
+          article.appendChild(image);
+          article.appendChild(content);
+
+          container.appendChild(article);
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var checkboxes = Array.from(document.querySelectorAll('.category-checkboxes input[type="checkbox"]'));
+      checkboxes.forEach(function(checkbox) {
+        checkbox.checked = true;
+      });
+
+      filterByCategory();
+    });
   </script>
 </head>
 <body>
@@ -121,48 +486,17 @@
       <!-- チェックボックスのラベルはアクセシビリティを向上させるために、フィールドセットで囲みました -->
       <fieldset>
         <legend>カテゴリーで絞り込む:</legend>
-        <label><input type="checkbox" value="ラーメン" onchange="filterByCategory()">ラーメン</label>
-        <label><input type="checkbox" value="ハンバーガー" onchange="filterByCategory()">ハンバーガー</label>
-        <label><input type="checkbox" value="ピザ" onchange="filterByCategory()">ピザ</label>
-        <label><input type="checkbox" value="寿司" onchange="filterByCategory()">寿司</label>
-        <label><input type="checkbox" value="和食" onchange="filterByCategory()">和食</label>
-        <label><input type="checkbox" value="洋食" onchange="filterByCategory()">洋食</label>
-        <label><input type="checkbox" value="イタリアン" onchange="filterByCategory()">イタリアン</label>
+        <label><input type="checkbox" value="ラーメン" onchange="filterByCategory()" checked>ラーメン</label>
+        <label><input type="checkbox" value="ハンバーガー" onchange="filterByCategory()" checked>ハンバーガー</label>
+        <label><input type="checkbox" value="ピザ" onchange="filterByCategory()" checked>ピザ</label>
+        <label><input type="checkbox" value="寿司" onchange="filterByCategory()" checked>寿司</label>
+        <label><input type="checkbox" value="和食" onchange="filterByCategory()" checked>和食</label>
+        <label><input type="checkbox" value="洋食 イタリアン" onchange="filterByCategory()" checked>洋食 イタリアン</label>
+        <label><input type="checkbox" value="イタリアン" onchange="filterByCategory()" checked>イタリアン</label>
       </fieldset>
     </div>
 
-    <table id="restaurantTable">
-      <thead>
-        <tr>
-          <th>写真</th>
-          <th>店名</th>
-          <th>分類</th>
-          <th>リンク</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div id="container"></div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var table = document.getElementById("restaurantTable");
-      var tbody = table.getElementsByTagName("tbody")[0];
-
-      restaurants.forEach(function(restaurant) {
-        var row = tbody.insertRow();
-        var imageCell = row.insertCell();
-        var nameCell = row.insertCell();
-        var categoryCell = row.insertCell();
-        var linkCell = row.insertCell();
-
-        imageCell.className = "restaurant-image-cell";
-        imageCell.innerHTML = `<img src="${restaurant.image}" alt="${restaurant.name}" class="restaurant-image">`;
-        nameCell.textContent = restaurant.name;
-        categoryCell.textContent = restaurant.category;
-        linkCell.innerHTML = `<a href="${restaurant.link}">詳細を見る</a>`;
-      });
-    });
-  </script>
 </body>
 </html>
