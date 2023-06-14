@@ -42,6 +42,12 @@
       color: #888;
     }
 
+    .article-price {
+      font-size: 14px;
+      color: green;
+      margin-bottom: 8px;
+    }
+
     .article-link {
       font-size: 14px;
       text-decoration: none;
@@ -71,7 +77,15 @@
         font-size: 12px;
       }
 
+      .article-price {
+        font-size: 12px;
+      }
+
       .article-link {
+        font-size: 12px;
+      }
+
+      .category-checkboxes label {
         font-size: 12px;
       }
     }
@@ -80,6 +94,10 @@
       .container {
         font-size: 200%;
       }
+
+      .category-checkboxes label {
+        font-size: 16px;
+      }
     }
   </style>
   <script>
@@ -87,339 +105,59 @@
     var restaurants = [
       {
         name: "レストランA",
-        category: "ラーメン",
+        category: "ラーメン ビュッフェ",
+        price: "1000円",
         image: "ramen.jpg",
         link: "https://example.com/restaurant-a"
       },
       {
         name: "レストランB",
-        category: "ハンバーガー",
+        category: "ハンバーガー ビュッフェ",
+        price: "1500円",
         image: "hamburger.jpg",
         link: "https://example.com/restaurant-b"
       },
       {
         name: "レストランC",
         category: "ピザ",
+        price: "2000円",
         image: "pizza.jpg",
         link: "https://example.com/restaurant-c"
       },
       {
         name: "レストランD",
         category: "寿司",
+        price: "2500円",
         image: "sushi.jpg",
         link: "https://example.com/restaurant-d"
       },
       {
         name: "茨城レストラン1",
-        category: "和食",
+        category: "洋食",
+        price: "1200円",
         image: "washoku.jpg",
         link: "https://example.com/ibaraki-restaurant-1"
       },
       {
         name: "茨城レストラン2",
         category: "洋食 イタリアン",
+        price: "1800円",
         image: "yoshoku.jpg",
         link: "https://example.com/ibaraki-restaurant-2"
       },
       {
         name: "茨城レストラン20",
         category: "イタリアン",
+        price: "2200円",
         image: "italian.jpg",
         link: "https://example.com/ibaraki-restaurant-20"
       },
       {
-        name: "茨城レストラン20",
+        name: "茨城レストラン21",
         category: "イタリアン",
+        price: "2300円",
         image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
-      },
-      {
-        name: "茨城レストラン20",
-        category: "イタリアン",
-        image: "italian.jpg",
-        link: "https://example.com/ibaraki-restaurant-20"
+        link: "https://example.com/ibaraki-restaurant-21"
       }
     ];
 
@@ -430,7 +168,7 @@
 
       restaurants.forEach(function(restaurant) {
         if (checkboxes.some(function(checkbox) {
-          return checkbox.value === restaurant.category;
+          return restaurant.category.toLowerCase().includes(checkbox.value.toLowerCase());
         })) {
           var article = document.createElement("div");
           article.classList.add("article");
@@ -451,6 +189,10 @@
           category.classList.add("article-category");
           category.textContent = restaurant.category;
 
+          var price = document.createElement("p");
+          price.classList.add("article-price");
+          price.textContent = "価格: " + restaurant.price;
+
           var link = document.createElement("a");
           link.classList.add("article-link");
           link.href = restaurant.link;
@@ -458,6 +200,7 @@
 
           content.appendChild(title);
           content.appendChild(category);
+          content.appendChild(price);
           content.appendChild(link);
 
           article.appendChild(image);
@@ -490,8 +233,8 @@
         <label><input type="checkbox" value="ハンバーガー" onchange="filterByCategory()" checked>ハンバーガー</label>
         <label><input type="checkbox" value="ピザ" onchange="filterByCategory()" checked>ピザ</label>
         <label><input type="checkbox" value="寿司" onchange="filterByCategory()" checked>寿司</label>
-        <label><input type="checkbox" value="和食" onchange="filterByCategory()" checked>和食</label>
-        <label><input type="checkbox" value="洋食 イタリアン" onchange="filterByCategory()" checked>洋食 イタリアン</label>
+        <label><input type="checkbox" value="洋食" onchange="filterByCategory()" checked>洋食</label>
+        <label><input type="checkbox" value="ビュッフェ" onchange="filterByCategory()" checked>ビュッフェ</label>
         <label><input type="checkbox" value="イタリアン" onchange="filterByCategory()" checked>イタリアン</label>
       </fieldset>
     </div>
